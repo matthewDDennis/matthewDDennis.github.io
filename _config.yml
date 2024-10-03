@@ -16,9 +16,9 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html", title:"Home"}
-  - {file: "/matthew_dennis-resume.pdf", title:"Resume"}
-  - {file: "README.md", title:"About"}
+  - {file: "index.html", title: "Home"}
+  - {file: "/matthew_dennis-resume.pdf", title: "Resume"}
+  - {file: "README.md", title: "About"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:matthew.dennis@rogers.com"}
