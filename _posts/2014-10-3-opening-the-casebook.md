@@ -3,6 +3,4 @@ title: "Opening the Casebook"
 layout: post
 ---
 
-# Opening the Casebook
-
 I will introduce the casebook and what it is about.

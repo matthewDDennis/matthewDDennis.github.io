@@ -3,6 +3,4 @@ title: "The Case of the Redis Client, Part 1: Collecting Clues"
 layout: post
 ---
 
-# he Case of the Redis Client, Part 1: Collecting Clues 
-
 I will introduce the case and collect the clues and information needed to solve it.
