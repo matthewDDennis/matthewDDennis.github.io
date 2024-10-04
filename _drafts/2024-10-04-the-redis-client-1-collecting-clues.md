@@ -3,7 +3,7 @@ title: "The Case of the Redis Client, Part 1: Collecting Clues"
 layout: post
 ---
 
-![Redis Client](https://www.code-sleuth.com/assets/images/redis-client.jpg)
+![Redis Client](https://www.code-sleuth.com/assets/images/opening-casebook.jpg)
 
 The Case of the Redis Client is a series of posts that will explore the design and implementation of a Redis client from scratch. In this first post, we will collect the clues and information needed to solve the case, and set the stage for the investigation. This is one of my oldest 'Code Cases'.
 
