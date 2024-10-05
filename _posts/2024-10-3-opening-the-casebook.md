@@ -1,11 +1,13 @@
 ---
 title: "Opening the Casebook"
 layout: post
+excerpt_separator: <!--more-->
 ---
 
 ![Opening the Casebook](https://www.code-sleuth.com/assets/images/opening-casebook.jpg)
 
 Welcome to the Code Sleuth blog! I am a software developer and detective, and I will be sharing my adventures in solving mysteries and puzzles in the world of software development. Each post will focus on a different case, and we will collect the clues and information needed to solve it. I will also provide the solutions to the cases, so you can see how I solved them. I hope you enjoy reading about my adventures as much as I enjoy solving them!
+<!--more-->
 
 Despite working for 15+ years at the CodeProject providing solutions allowing others to show off their brand and experience, I have not taken the time to show off my own brand and experience. This blog is my attempt to rectify that.
 

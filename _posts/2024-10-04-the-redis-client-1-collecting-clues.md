@@ -1,6 +1,7 @@
 ---
 title: "The Case of the Redis Client, Part 1: Collecting Clues"
 layout: post
+excerpt_separator: <!--more-->
 ---
 
 ![Redis Client](https://www.code-sleuth.com/assets/images/redis-client1/redis-client.jpg)
@@ -12,6 +13,7 @@ Over the years, when trying to learn or understand a new technology, I have foun
 One technology that I have been interested in for a while is Redis, an open-source, in-memory data structure store that can be used as a database, cache, and message broker. Redis is known for its speed, simplicity, and flexibility, and is widely used in web applications, real-time analytics, and other use cases where high performance and scalability are required.
 
 Writing a Redis client seemed like a good way to learn more about Redis and its features, as well as to explore the design and implementation of a networked client-server application. In this series of posts, I will share my experiences in building a Redis client from scratch, and the challenges and insights that I encountered along the way.
+<!--more-->
 
 ## Collecting Clues
 
