@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 
 ![Redis Client](https://www.code-sleuth.com/assets/images/redis-client1/redis-client.jpg)
 
-The Case of the Redis Client is a series of posts that will explore the design and implementation of a Redis client from scratch. In this first post, we will collect the clues and information needed to solve the case, and set the stage for the investigation. This is one of my oldest 'Code Cases'.
+The Case of the Redis Client is a series of posts that will explore the design and implementation of a Redis client from scratch. In this first post, we will collect the clues and information needed to solve the case, and set the stage for the investigation. This is one of my oldest 'Cold Cases'.
 
 Over the years, when trying to learn or understand a new technology, I have found that the best way to do so is to build something with it. This hands-on approach allows me to explore the technology in depth, understand how it works, and identify any issues or limitations. It also gives me the opportunity to experiment with different features and configurations, and to see how they affect the performance and behavior of the system.
 
