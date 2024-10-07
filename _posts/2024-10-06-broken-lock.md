@@ -26,7 +26,7 @@ The result of this is that once the `ConditionalWeakTable` gets into an invalid 
 
 The StackExchange.Redis library was using locks to protect the `ConditionalWeakTable`, but the locks were not being released when an `OOM` or `ThreadAbort `exception was thrown. This caused the locks to be held indefinitely, preventing any other threads from accessing the table and causing the deadlock. This issue is highlighted in https://devblogs.microsoft.com/dotnet/threadabortexception/.
 
-> If your code calls Thread.Abort, be aware that the call will block if the thread being aborted is in a protected region—such as a catch block or a finally. If the thread calling Thread.Abort is holding a lock that the aborting thread needs, you may deadlock.
+> If your code calls Thread.Abort, be aware that the call will block if the thread being aborted is in a protected region such as a catch block or a finally. If the thread calling Thread.Abort is holding a lock that the aborting thread needs, you may deadlock.
 
 Unfortunately, ASP.NET WebForms uses Thread.Abort to handle timeouts and other exceptions, which is why the issue was only occurring in our .NET Framework applications.
 
