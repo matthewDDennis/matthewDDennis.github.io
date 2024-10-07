@@ -5,7 +5,7 @@ comments: true
 excerpt_separator: <!--more-->
 ---
 
-![Redis Client](https://www.code-sleuth.com/assets/images/redis-client1/redis-client.jpg)
+![Redis Client](/assets/images/redis-client1/redis-client.jpg)
 
 The Case of the Redis Client is a series of posts that will explore the design and implementation of a Redis client from scratch. In this first post, we will collect the clues and information needed to solve the case, and set the stage for the investigation. This is one of my oldest 'Cold Cases'.
 
@@ -56,7 +56,7 @@ We will update the solution's Nuget packages to resolve warnings about security 
 
 The solution structure will look like this:
 
-![Solution Structure](https://www.code-sleuth.com/assets/images/redis-client1/solution-structure.png)
+![Solution Structure](/assets/images/redis-client1/solution-structure.png)
 
 
 ### Setting up the Docker Environment
@@ -168,7 +168,7 @@ This will allow us to compare the performance of our client with the existing cl
 
 The results of this are as follows:
 
-![Base Line Benchmark](https://www.code-sleuth.com/assets/images/redis-client1/baseline-benchmark.png)
+![Base Line Benchmark](/assets/images/redis-client1/baseline-benchmark.png)
 
 ## Wrapping Up
 In this post, we have collected the clues and information needed to solve the case of the Redis client, and set the stage for the investigation.

@@ -5,7 +5,7 @@ comments: true
 excerpt_separator: <!--more-->
 ---
 
-![Opening the Casebook](https://www.code-sleuth.com/assets/images/opening-casebook.jpg)
+![Opening the Casebook](/assets/images/opening-casebook.jpg)
 
 Welcome to the Code Sleuth blog! I am a software developer and detective, and I will be sharing my adventures in solving mysteries and puzzles in the world of software development. Each post will focus on a different case, and we will collect the clues and information needed to solve it. I will also provide the solutions to the cases, so you can see how I solved them. I hope you enjoy reading about my adventures as much as I enjoy solving them!
 <!--more-->
