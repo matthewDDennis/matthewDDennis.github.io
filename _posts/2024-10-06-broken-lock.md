@@ -22,7 +22,7 @@ While tracking down the issue, I made the following observations:
 
 Using the Visual Studio Debugger and the source code for StackExchange.Redis, I was able to determine that the issue was caused by a deadlock in the Redis Client. By eliminating all the likely causes, I tracked it down to a unexpected cause, and issue in a Microsoft supplied library, The client was using a static instance of `ConditionalWeakTable`. Unfortunately, this class sets an _invalid flag before it starts something that could make the data in the table temporarily invalid and clears it when done. In many of its methods that modify the table, the _invalid flag is checked, and an exception is thrown if it is set.
 
-The result of this is that once the `ConditionalWeakTable `gets into an invalid state, usually as a result of an OOM or ThreadAbort exception in the calling code, the table is now permanently invalid, and all future calls to it will throw an exception. This is what was causing the Redis Client to lock up and timeout.
+The result of this is that once the `ConditionalWeakTable` gets into an invalid state, usually as a result of an OOM or ThreadAbort exception in the calling code, the table is now permanently invalid, and all future calls to it will throw an exception. This is what was causing the Redis Client to lock up and timeout.
 
 The StackExchange.Redis library was using locks to protect the `ConditionalWeakTable`, but the locks were not being released when an `OOM` or `ThreadAbort `exception was thrown. This caused the locks to be held indefinitely, preventing any other threads from accessing the table and causing the deadlock. This issue is highlighted in https://devblogs.microsoft.com/dotnet/threadabortexception/.
 
