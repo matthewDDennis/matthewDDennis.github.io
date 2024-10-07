@@ -25,7 +25,7 @@ Using the Visual Studio Debugger and the source code for StackExchange.Redis, I 
 
 The result of this is that once the `ConditionalWeakTable` gets into an invalid state, usually as a result of an OOM or ThreadAbort exception in the calling code, the table is now permanently invalid, and all future calls to it will throw an exception. This is what was causing the Redis Client to lock up and timeout.
 
-The StackExchange.Redis library was using locks to protect the `ConditionalWeakTable`, but the locks were not being released when an `OOM` or `ThreadAbort `exception was thrown. This caused the locks to be held indefinitely, preventing any other threads from accessing the table and causing the deadlock. This issue is highlighted in https://devblogs.microsoft.com/dotnet/threadabortexception/.
+The StackExchange.Redis library was using locks to protect the `ConditionalWeakTable`, but the locks were not being released when an `OOM` or `ThreadAbort `exception was thrown. This caused the locks to be held indefinitely, preventing any other threads from accessing the table and causing the deadlock. This issue is highlighted in [https://devblogs.microsoft.com/dotnet/threadabortexception/](https://devblogs.microsoft.com/dotnet/threadabortexception/).
 
 > If your code calls Thread.Abort, be aware that the call will block if the thread being aborted is in a protected region such as a catch block or a finally. If the thread calling Thread.Abort is holding a lock that the aborting thread needs, you may deadlock.
 
