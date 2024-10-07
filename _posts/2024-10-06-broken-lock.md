@@ -1,6 +1,7 @@
 ---
 title: "The Case of the Broken Lock"
 layout: post
+comments: true
 excerpt_separator: <!--more-->
 ---
 
@@ -8,7 +9,7 @@ excerpt_separator: <!--more-->
 
 While planning out the next installment of the "Case of the Redis Client", I remembered a case from a few years ago that was causing us serious problems at CodeProject. We were using Redis to cache a lot of data and UI, which drastically improved the User Experience and resource usage. However, occasionally the Redis Client, [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis), would lock up and timeout on all requests. We have 4 front-end webservers, and when the issue occurred, most, if not all, of the webservers would start reporting Redis errors.
 
-Needless to say, the site would slow down to a crawl and become unsuable. This is the story of how I uncovered the unlikely culprit.
+Needless to say, the site would slow down to a crawl and become unusuable. This is the story of how I uncovered the unlikely culprit.
 
 <!--more-->
 

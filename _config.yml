@@ -26,7 +26,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/code-sleuth/"}
 
 comments:
-#  disqus_shortname: ""    # see https://disqus.com/
+disqus_shortname: "code-sleuth-casebook"    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
 
 plugins:

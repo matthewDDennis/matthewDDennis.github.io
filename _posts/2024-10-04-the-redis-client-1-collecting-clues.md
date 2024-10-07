@@ -1,6 +1,7 @@
 ---
 title: "The Case of the Redis Client, Part 1: Collecting Clues"
 layout: post
+comments: true
 excerpt_separator: <!--more-->
 ---
 

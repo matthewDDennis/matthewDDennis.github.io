@@ -1,6 +1,7 @@
 ---
 title: "Opening the Casebook"
 layout: post
+comments: true
 excerpt_separator: <!--more-->
 ---
 
