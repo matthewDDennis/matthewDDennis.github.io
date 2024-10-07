@@ -165,7 +165,7 @@ namespace Benchmarks
 Before we start building the Redis client, we need to establish a performance baseline for the client using the StackExchange.Redis client.
 This will allow us to compare the performance of our client with the existing client, and identify any areas where we can optimize the client for better performance.
 
-The results of the are as follows:
+The results of this are as follows:
 
 ![Base Line Benchmark](https://www.code-sleuth.com/assets/images/redis-client1/baseline-benchmark.png)
 
