@@ -13,7 +13,7 @@ Having collected most of the clues we need to solve the mystery of the Redis cli
 
 I will use TDD to both articulate our understanding of the Redis client and to validate our assumptions. We will start by writing a test that will fail because the Redis client does not exist yet. We will then create the Redis client and implement the minimum functionality required to make the test pass. We will continue to write tests and implement the necessary functionality until we have a working Redis client.
 
-Using TDD allows me to focus on the immediately relevant parts of the Redis client without getting distracted by gold-plating, nice-to-have features, and premature optimization. This also means we can safely build case incrementally and safely revise our design as new facts become apparent. This approach will help us to understand the Redis client better and to identify any gaps in our knowledge. It will also help us to identify any missing pieces of the puzzle that we need to find.
+Using TDD allows me to focus on the immediately relevant parts of the Redis client without getting distracted by gold-plating, nice-to-have features, and premature optimization. This also means we can safely build the `RedisClient` incrementally and safely revise our design as new facts become apparent. This approach will help us to understand the Redis client better and to identify any gaps in our knowledge. It will also help us to identify any missing pieces of the puzzle that we need to find.
 <!--more-->
 
 I also realize that I got ahead of myself in writing any tests, so the existing test will be removed and we will start from scratch.
