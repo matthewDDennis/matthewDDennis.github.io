@@ -1,5 +1,5 @@
 ---
-title: "The Case of the Redis Client, Part 1: Puzzle Pieces"
+title: "The Case of the Redis Client, Part 2: Puzzle Pieces"
 layout: post
 comments: true
 excerpt_separator: <!--more-->
